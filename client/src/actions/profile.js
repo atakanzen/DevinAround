@@ -60,6 +60,8 @@ export const getProfileById = (userId) => async (dispatch) => {
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }
     });
+
+    dispatch(setAlert(err.response.statusText, 'warning'));
   }
 };
 
