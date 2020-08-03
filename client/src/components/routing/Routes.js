@@ -15,7 +15,7 @@ import Posts from '../posts/Posts';
 import Post from '../post/Post';
 import NotFound from '../layout/NotFound';
 
-export const Routes = () => {
+const Routes = () => {
   return (
     <section className='container'>
       <Alert />
@@ -36,3 +36,5 @@ export const Routes = () => {
     </section>
   );
 };
+
+export default Routes;
