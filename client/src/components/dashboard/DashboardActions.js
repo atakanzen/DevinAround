@@ -1,18 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const routes = [
+  {
+    path: '/edit-profile',
+    label: 'Edit Profile',
+    iClass: 'fas fa-user-circle text-primary'
+  },
+  {
+    path: '/add-experience',
+    label: 'Add Experience',
+    iClass: 'fab fa-black-tie text-primary'
+  },
+  {
+    path: '/add-education',
+    label: 'Add Education',
+    iClass: 'fas fa-graduation-cap text-primary'
+  }
+];
 export default () => {
   return (
     <div class='dash-buttons'>
-      <Link to='/edit-profile' className='btn btn-light'>
-        <i className='fas fa-user-circle text-primary'></i> Edit Profile
-      </Link>
-      <Link to='/add-experience' className='btn btn-light'>
-        <i className='fab fa-black-tie text-primary'></i> Add Experience
-      </Link>
-      <Link to='/add-education' className='btn btn-light'>
-        <i className='fas fa-graduation-cap text-primary'></i> Add Education
-      </Link>
+      {routes.map(({ path, label, iClass }) => {
+        return (
+          <Link to={path}>
+            <i className={iClass}></i> {label}
+          </Link>
+        );
+      })}
     </div>
   );
 };
