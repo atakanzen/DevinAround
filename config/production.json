@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://atakanz:atakanz3435@merntutorial.xow6k.mongodb.net/inittest>?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken123",
-  "githubClientId": "375a5b0dc18b6b9491fe",
-  "githubSecret": "7b66553bb49897c8a9f71bd1afa0d92919679da7"
-}
